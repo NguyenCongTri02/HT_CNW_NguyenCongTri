@@ -1,0 +1,20 @@
+#tb1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#tb1 th,
+#tb1 td {
+    border: 1px solid black;
+    height: 30px;
+}
+
+#tb1 thead tr:first-child {
+    background-color: grey;
+}
