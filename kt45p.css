@@ -1,0 +1,54 @@
+* {
+    margin: auto;
+    padding: 0px;
+}
+
+.wrapper {
+    height: 600px;
+    width: 1089px;
+    background-color: rgb(223, 241, 241);
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+
+.content {
+    height: 690px;
+    width: 100%;
+    background-color: rgb(64, 53, 102);
+}
+section{
+    height: 690px;
+    width: 25%;
+    background-color: red;
+    float:left;
+
+
+}
+aside{
+    height: 690px;
+    width: 100%;
+    background-color: blue;
+   
+    
+}
+article{
+    height: 670px;
+    width: 72%;
+    background-color: rgb(7, 124, 26);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+   
+}
+h6{
+    height: 340px;
+    width: 100%;
+    background-color: crimson;   
+
+
+}
