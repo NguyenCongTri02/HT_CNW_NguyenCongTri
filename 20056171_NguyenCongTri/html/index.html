@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px auto;
+
+    }
+    .wapper{
+        height: 800px;
+        width: 1089px;
+        background-color: antiquewhite;
+    }
+    body{
+        background-image: url("../img/background.jpg");
+    }
+    nav{
+        height: 50px;
+        width: 1089px;
+        background-color: rgb(167, 19, 19)
+    }
+    header{
+        height:150px ;
+        width: 1089px;
+        background-image:url("../img/nature-3082832__480.jpg") ;
+        color: red;
+        text-align: center;
+    }
+    .content{
+        height: 400px;
+        width: 1089px;
+        background-color: orangered;
+    }
+    aside{
+        height: 400px;
+        width: 400px;
+        background-color: aquamarine;
+        float: left;
+    }
+    section{
+        height: 400px;
+        width: 689px;
+        background-color: bisque;
+        float: left;
+    }
+    .menu li{
+        float: left;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        text-indent: 20px;
+        background-color: rgb(155, 19, 19);
+        position: relative;
+    }
+    a{
+        color: yellow;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu li:hover{
+        background-color: rgb(142, 127, 199);
+    }
+    li:hover>a{
+        color: blue;
+        font-style: italic;
+    }
+    .menu li.submenu{
+        display: none;
+        position: absolute;
+    }
+    .menu li:hover>.submenu{
+        display: block;
+    }
+    }
+    nav span form #txtEmail{
+        padding: 3px;
+        color: blue;
+    }
+    nav span form #btnGO{
+        padding: 3px;
+        color: rgb(196, 45, 45);
+        border-radius: 50% ;
+        text-shadow: 2px 2px 2px rgb(228, 33, 33);
+    }
+    section form fieldset{
+        float: none;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="wapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="http://iuh.edu.vn">HOME</a></li>
+                <li><a href="">SEVICES</a></li>
+                <li><a href="">CONTRACT</a>
+                    <ul class="submenu">
+                        
+                    </ul>
+                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>
+            <span>
+                <form action="DangKy.php">
+                    <label for="lblEmail">Email:</label>
+                    <input type="email" name="txtEmail" id="txtEmail" required placeholder="nhập email">
+                    <input type="submit" value="GO" id="btnGO">
+                </form>
+            </span>
+        </nav>
+        <header>
+            <h1>Tôi Yêu Việt Nam</h1>
+        </header>
+        <div class="content">
+            <aside>
+               <article>
+                <h5 style="position: absolute; font-weight:bold;color:white;text-shadow:10px 20px 20px violet ">GAME SHOW</h5>
+                <img src="..//img/hdt1.jpg" alt="none">
+               </article>
+               <article>
+                <h5 style="position: absolute; font-weight:bold;color:white;text-shadow:10px 20px 20px violet ">VISIT</h5>
+                <img src="../img/hdt2.jpg" alt="">
+               </article>
+               <article>
+                <h5 style="position: absolute; font-weight:bold;color:white;text-shadow:10px 20px 20px violet ">GAME</h5>
+                <img src="../img/hd3.jpg" alt="">
+               </article>
+            </aside>
+
+            <section>
+                <form action="dangky.php">
+                    <fieldset>
+                        <legend>Thông tin của bạn</legend>
+                        <label for="iblHoten">Hoten</label>
+                        <input type="text" name="txtHoten" id="txtHoten" required placeholder="Nhập họ tên">
+                        <label for="iblEmail">Email</label>
+                        <input type="email" name="txtEmail" id="txtEmail" required placeholder="Email">
+                        <label for="lbgGT">Giới Tính</label>
+                        <input type="radio" name="radioNam" id="radioNam" value="nam" ><label for="Nam">Nam</label>
+                        <input type="radio" name="radioNu" id="radioNu" value="nu"  ><label for="Nu">Nu</label>
+                        
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
